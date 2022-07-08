@@ -1,2 +1,3 @@
 Lamp centos
+#yum install epel-release
 #yum install php-gd
