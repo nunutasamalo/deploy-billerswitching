@@ -7,3 +7,5 @@ setsebool -P httpd_can_network_connect=1
 install mycrypt
 yum install epel-release
 yum install php-mcrypt
+
+chmod 777 to log folder
