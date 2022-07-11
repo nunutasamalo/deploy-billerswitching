@@ -9,3 +9,6 @@ yum install epel-release
 yum install php-mcrypt
 
 chmod 777 to log folder
+
+
+chomod 777 bashsript rcd
