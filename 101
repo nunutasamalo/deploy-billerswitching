@@ -17,3 +17,6 @@ chomod 777 bashsript rcd
  In Red Hat Enterprise Linux, you can set individual domains to permissive mode while the system runs in enforcing mode. For example, to make the httpd_t domain permissive:
 
 ~]# semanage permissive -a httpd_t
+
+
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/selinux_users_and_administrators_guide/index#sect-Security-Enhanced_Linux-Fixing_Problems-Permissive_Domains
