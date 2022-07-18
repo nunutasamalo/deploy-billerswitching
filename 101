@@ -12,3 +12,8 @@ chmod 777 to log folder
 
 
 chomod 777 bashsript rcd
+
+
+ In Red Hat Enterprise Linux, you can set individual domains to permissive mode while the system runs in enforcing mode. For example, to make the httpd_t domain permissive:
+
+~]# semanage permissive -a httpd_t
