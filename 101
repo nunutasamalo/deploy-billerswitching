@@ -18,5 +18,7 @@ chomod 777 bashsript rcd
 
 ~]# semanage permissive -a httpd_t
 
+if not found install => policycoreutils-python-2.5-34.el7.x86_64
+
 
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/selinux_users_and_administrators_guide/index#sect-Security-Enhanced_Linux-Fixing_Problems-Permissive_Domains
