@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<mux class="org.jpos.q2.iso.QMUX" logger="Q2" name="qserver-mux-ultimate">
+    <in>ULT_NETWORK_OUT</in>
+    <out>ULT_NETWORK_IN</out>
+    <key>7 11 37</key>
+    <unhandled>unhandled</unhandled>
+</mux>
+

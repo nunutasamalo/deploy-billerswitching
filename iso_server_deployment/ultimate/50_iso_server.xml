@@ -1,0 +1,18 @@
+<server class="org.jpos.q2.iso.QServer" logger="Q2" name="iso-server-1111" realm="iso-server-1111">
+    <attr name="port" type="java.lang.Integer">1111</attr>
+    <channel class="iso_server_ultimate.MsgChannel" 
+             packager="iso_server_ultimate.IsoPackager"
+             type="server"
+             logger="Q2"
+             realm="iso-server-1111">
+        <property name="timeout" value="360000"/>
+    </channel>
+    <request-listener class="iso_server_ultimate.requestListener" logger="Q2" realm="incoming-request-listener">
+        <property name="space" value="tspace:default" />
+        <property name="queue" value="UltTrxQueue" />
+        <property name="ctx.DESTINATION"  value="qserver-mux-ultimate" />
+    </request-listener>
+    <in>ULT_NETWORK_IN</in>
+    <out>ULT_NETWORK_OUT</out>
+</server>
+

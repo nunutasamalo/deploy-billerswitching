@@ -1,0 +1,18 @@
+<server class="org.jpos.q2.iso.QServer" logger="Q2" name="iso-server-1108" realm="iso-server-1108">
+    <attr name="port" type="java.lang.Integer">1108</attr>
+    <channel class="iso_server_tiphone.MsgChannel" 
+             packager="iso_server_tiphone.IsoPackager"
+             type="server"
+             logger="Q2"
+             realm="iso-server-1108">
+        <property name="timeout" value="360000"/>
+    </channel>
+    <request-listener class="iso_server_tiphone.requestListener" logger="Q2" realm="incoming-request-listener">
+        <property name="space" value="tspace:default" />
+        <property name="queue" value="TrxQueue" />
+        <property name="ctx.DESTINATION"  value="qserver-mux-tiphone" />
+    </request-listener>
+    <in>TP_NETWORK_IN</in>
+    <out>TP_NETWORK_OUT</out>
+</server>
+

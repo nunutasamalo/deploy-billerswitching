@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<mux class="org.jpos.q2.iso.QMUX" logger="Q2" name="qserver-mux-syb">
+    <in>SYB_NETWORK_OUT</in>
+    <out>SYB_NETWORK_IN</out>
+    <key>7 11 37</key>
+    <unhandled>unhandled</unhandled>
+</mux>
+

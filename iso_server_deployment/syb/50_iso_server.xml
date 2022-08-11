@@ -1,0 +1,20 @@
+<server class="org.jpos.q2.iso.QServer" logger="Q2" name="iso-server-1114" realm="iso-server-1114">
+    <attr name="port" type="java.lang.Integer">1114</attr>
+    
+	<channel class="com.paygate.ipnet.syb.channels.SybChannel" 
+             packager="com.paygate.ipnet.syb.packagers.SybPackager"
+             type="server"
+             logger="Q2"
+             realm="iso-server-1114">
+        <property name="timeout" value="360000"/>
+    </channel>
+	
+    <request-listener class="com.paygate.ipnet.syb.listener.RequestListener" logger="Q2" realm="incoming-request-listener">
+        <property name="space" value="tspace:default" />
+        <property name="queue" value="SybTrxQueue" />
+        <property name="ctx.DESTINATION"  value="qserver-mux-syb" />
+    </request-listener>
+    <in>SYB_NETWORK_IN</in>
+    <out>SYB_NETWORK_OUT</out>
+</server>
+

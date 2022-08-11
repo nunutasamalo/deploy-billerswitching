@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<mux class="org.jpos.q2.iso.QMUX" logger="Q2" name="qserver-mux">
+    <in>NETWORK_OUT_MTR</in>
+    <out>NETWORK_IN_MTR</out>
+    <key>7 11 37 41</key>
+    <unhandled>unhandled</unhandled>
+</mux>
+
